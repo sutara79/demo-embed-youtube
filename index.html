@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+/* CSSだけでレスポンシブに対応できる */
+.youtube-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.youtube-wrapper > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<div class="jumbotron">
+  <div class="container">
+    <h1>YouTube埋め込み</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="youtube-wrapper">
+        <!-- YouTubeの埋め込みコードをそのまま設置する -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FyfwLX4HAxM" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <a href="https://github.com/sutara79/demo-embed-youtube">View on GitHub</a>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
